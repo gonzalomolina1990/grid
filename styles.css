@@ -1,0 +1,57 @@
+#sky{
+    height: 50%;
+    width: 100%;
+    background: rgb(175,42,134);
+    background: linear-gradient(0deg, rgba(175,42,134,1) 0%, rgba(61,35,90,1) 100%);
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+
+#sun{
+    background: rgb(208,65,144);
+    background: linear-gradient(0deg, rgba(208,65,144,1) 0%, rgba(234,80,132,1) 31%, rgba(251,187,35,1) 100%);
+    position: relative;
+    display: flex;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    align-items: center;
+}
+
+#horizon{
+    position: absolute;
+    display: block;
+    height: 8rem;
+    width: 100%;
+    bottom: 0;
+    background: rgb(55,34,89);
+    opacity: 0;
+
+}
+
+
+
+
+#grid{
+    height: 50%;
+    width: 100%;
+    background: rgb(55,34,89);
+    background: linear-gradient(0deg, rgba(55,34,89,1) 0%, rgba(68,38,131,1) 100%);
+    display: block;
+    position: absolute;
+    top: 50%;
+    box-shadow: 0px -0.2rem 3rem 0.5rem #fff;
+
+}
+
+#moving_grid {
+    height: 100%;
+    width: 100%;
+    background-image:
+      repeating-linear-gradient(#43A9E0 0 0.1rem, transparent 0.1rem 100%),
+      repeating-linear-gradient(90deg, #43A9E0 0 0.1rem, transparent 0.1rem 100%);
+    background-size: 5rem 5rem;
+    background-position-y: 5px;
+}
