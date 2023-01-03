@@ -1,5 +1,3 @@
-console.log("hola");
-
 function gridCreate() {
     var tl = new TimelineMax({repeat: -1});
     tl.to($('#moving_grid'), 1, {"backgroundPositionY": "-=5rem", ease: Linear.easeNone});
@@ -17,5 +15,11 @@ function mountainCreate() {
     }
 }
 
+function sunDown(){
+    var tl2 = new TimelineMax();
+    tl2.to($('#sun'), 50, {"bottom": "-=2rem", ease: Power2.easeOut});
+}
+
 gridCreate();
-mountainCreate();
+sunDown();
+//mountainCreate();
