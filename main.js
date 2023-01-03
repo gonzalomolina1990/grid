@@ -17,4 +17,4 @@ function mountainCreate() {
 }
 
 gridCreate();
-mountainCreate()
+mountainCreate();
