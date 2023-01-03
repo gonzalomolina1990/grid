@@ -1,3 +1,4 @@
+console.log("hola");
 
 function gridCreate() {
     var tl = new TimelineMax({repeat: -1});
