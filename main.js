@@ -3,16 +3,27 @@ function gridCreate() {
     tl.to($('#moving_grid'), 1, {"backgroundPositionY": "-=5rem", ease: Linear.easeNone});
 }
 
-function mountainCreate() {
-    amount = 5
-    for (let i = 0; i < amount; i++) {
-        mountain = $(".mountain");
-        var xmlns = "http://www.w3.org/2000/svg";
-        var svg = mountain.createElementNS(xmlns, "svg");
-        var polygon = mountain.createElementNS(xmlns, "polygon");
-        polygon.setAttributeNS("points", "points","0 150, 150 15, 300 150")
-        polygon.setAttributeNS("fill", "fill","rgb(55,34,89)")
+function mountainMove() {
+
+    function randomIntFromInterval(min, max) {
+        return Math.floor(Math.random() * (max - min + 1) + min)
     }
+
+   setInterval(() => {
+    for (let i = 0; i < document.getElementsByClassName("cls-1")[0].points.length; i++) {
+        if (i == 1 || i == 3 || i == 5 || i == 7 || i == 9 || i == 11 || i == 13) {
+            document.getElementsByClassName("cls-1")[0].points[i].y += randomIntFromInterval(-2,2) 
+            //console.log(i, document.getElementsByClassName("cls-1")[0].points[i].y)
+        }
+    
+   }
+   }, 200);
+
+
+   
+
+
+
 }
 
 function sunDown(){
@@ -22,4 +33,4 @@ function sunDown(){
 
 gridCreate();
 sunDown();
-//mountainCreate();
+mountainMove();
