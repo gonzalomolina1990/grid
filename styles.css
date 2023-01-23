@@ -1,3 +1,7 @@
+body{
+    margin: 0;
+}
+
 #sky{
     height: 50%;
     width: 100%;
@@ -23,10 +27,10 @@
 #horizon{
     position: absolute;
     display: block;
-    height: 8rem;
+    height: 5rem;
     width: 100%;
     bottom: 0;
-    opacity: 0.3;
+    opacity: 0.8;
 
 }
 

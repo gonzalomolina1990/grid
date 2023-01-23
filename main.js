@@ -12,8 +12,11 @@ function mountainMove() {
    setInterval(() => {
     for (let i = 0; i < document.getElementsByClassName("cls-1")[0].points.length; i++) {
         if (i == 1 || i == 3 || i == 5 || i == 7 || i == 9 || i == 11 || i == 13) {
-            document.getElementsByClassName("cls-1")[0].points[i].y += randomIntFromInterval(-2,2) 
-            //console.log(i, document.getElementsByClassName("cls-1")[0].points[i].y)
+            document.getElementsByClassName("cls-1")[0].points[i].y += randomIntFromInterval(-1, 1); 
+            document.getElementsByClassName("cls-2")[0].points[i].y += randomIntFromInterval(-1, 1);
+
+            console.log(i, document.getElementsByClassName("cls-2")[0].points[i].y)
+
         }
     
    }
