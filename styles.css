@@ -1,3 +1,8 @@
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
 body{
     margin: 0;
     background-color: rgb(55,34,89)
